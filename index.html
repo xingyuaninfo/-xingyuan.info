@@ -16,48 +16,14 @@
 				height: 4em;
 				padding: 0 15px !important;
 			}
-			/* 2. 隐藏初始状态的列表（去掉了 !important，防止阻断 JS 交互） */
-			#langMenu, #menu { display: none; }
 			
-			/* 3. 页面其他自定义样式 */
+			/* 2. 页面其他自定义样式 */
 			.features { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 20px !important; }
 			.features section { flex: 1 1 22% !important; min-width: 220px !important; text-align: center; }
 			@media screen and (max-width: 736px) {
 				.features section { flex: 1 1 100% !important; margin-bottom: 2em !important; }
 				#cta .row.gtr-200 { display: block !important; }
 			}
-			/* 语言下拉菜单样式 */
-.lang-dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 4em;
-    background: rgba(30, 35, 38, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    padding: 10px 0;
-    min-width: 120px;
-    z-index: 10000;
-}
-.lang-dropdown .dropdown-content li {
-    display: block;
-    padding: 0;
-}
-.lang-dropdown .dropdown-content li a {
-    display: block;
-    padding: 8px 20px;
-    color: #fff !important;
-    font-size: 0.85em;
-    border: 0;
-    text-align: center;
-}
-.lang-dropdown .dropdown-content li a:hover {
-    background: rgba(33, 178, 166, 0.2);
-}
-/* 鼠标悬停时显示 */
-.lang-dropdown:hover .dropdown-content {
-    display: block;
-}
 			#banner { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg'); background-size: cover; background-position: center; }
 		</style>
 	</head>
@@ -66,25 +32,22 @@
 		<div id="page-wrapper">
 
 			<header id="header" class="alt">
-    <h1><a href="index.html">星远科技</a></h1>
-    <nav id="nav">
-        <ul>
-            </li>
-            <li class="special"><a href="#menu" class="menuToggle"><span>菜单</span></a></li>
-        </ul>
-    </nav>
-</header>
-
-			<div id="langMenu">
-				<ul>
-					<li><a href="index.html">简体中文</a></li>
-					<li><a href="index_tc.html">繁体中文</a></li>
-					<li><a href="index_en.html">English</a></li>
-				</ul>
-			</div>
+				<h1><a href="index.html">星远科技</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special"><a href="#menu" class="menuToggle"><span>菜单 / Language</span></a></li>
+					</ul>
+				</nav>
+			</header>
 
 			<div id="menu">
 				<ul>
+					<li style="border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.8em; margin-bottom: 0.8em; text-align: center;">
+						<span class="icon solid fa-globe" style="margin-right: 6px; color: #21b2a6;"></span>
+						<a href="index.html" style="display:inline; font-size:0.9em; color:#21b2a6; border:0; padding:0 5px;">简体</a> | 
+						<a href="index_tc.html" style="display:inline; font-size:0.9em; border:0; padding:0 5px;">繁体</a> | 
+						<a href="index_en.html" style="display:inline; font-size:0.9em; border:0; padding:0 5px;">EN</a>
+					</li>
 					<li><a href="index.html">首页</a></li>
 					<li><a href="#one">关于我们</a></li>
 					<li><a href="#mission">服务宗旨</a></li>
@@ -142,26 +105,26 @@
 						<p>高效、稳定、灵活、省心，协助企业建立长期可靠的远程团队支持体系。</p>
 					</header>
 
-					<div class="features" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-						<section style="flex: 1 1 22%; min-width: 200px; text-align: center; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+					<div class="features">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
 							<span class="icon solid fa-user-check" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
 							<h3>精准人才匹配</h3>
 							<p style="font-size: 0.9rem;">依托东南亚多元人才网络，根据需求筛选，协助快速匹配远程人才。</p>
 						</section>
 
-						<section style="flex: 1 1 22%; min-width: 200px; text-align: center; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
 							<span class="icon solid fa-tasks" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
 							<h3>稳定团队管理支持</h3>
 							<p style="font-size: 0.9rem;">协助进行考勤追踪与纪律维护，确保团队稳定运作，配合企业管理规范。</p>
 						</section>
 
-						<section style="flex: 1 1 22%; min-width: 200px; text-align: center; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
 							<span class="icon solid fa-chart-line" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
 							<h3>更轻松的运营模式</h3>
 							<p style="font-size: 0.9rem;">减少跨区域招聘沟通成本，通过标准化托管，助力企业专注核心业务。</p>
 						</section>
 
-						<section style="flex: 1 1 22%; min-width: 200px; text-align: center; background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
 							<span class="icon solid fa-sliders-h" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
 							<h3>灵活且可扩展</h3>
 							<p style="font-size: 0.9rem;">无论是单岗位还是团队增长，均可提供弹性的人才配置与支持。</p>
