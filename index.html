@@ -7,37 +7,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* 核心响应式修复：保障手机端完美排版 */
-			@media screen and (max-width: 736px) {
-				/* 使为什么选择我们的图片和内容在手机端变为上下堆叠 */
-				.spotlight {
-					flex-direction: column !important;
-				}
-				.spotlight .image {
-					width: 100% !important;
-					max-width: 100% !important;
-					margin-bottom: 1.5em !important;
-				}
-				.spotlight .content {
-					width: 100% !important;
-					padding: 1em 0 !important;
-				}
-				/* 联系我们板块由左右布局自动切换为上下堆叠 */
-				#cta .row.gtr-200 {
-					display: block !important;
-				}
-				#cta .row.gtr-200 > div {
-					width: 100% !important;
-					padding-left: 0 !important;
-					border-left: 0 !important;
-					margin-bottom: 2.5em;
-				}
-				/* 让成功案例卡片在手机端自动空出上下安全间距，拒绝重叠 */
-				.custom-case-card {
-					margin-bottom: 1.8em !important;
-				}
-			}
-		</style>
+    /* 核心响应式修复 */
+    @media screen and (max-width: 736px) {
+        .spotlight { flex-direction: column !important; }
+        .spotlight .image { width: 100% !important; max-width: 100% !important; margin-bottom: 1.5em !important; }
+        .spotlight .content { width: 100% !important; padding: 1em 0 !important; }
+        #cta .row.gtr-200 { display: block !important; }
+        #cta .row.gtr-200 > div { width: 100% !important; padding-left: 0 !important; border-left: 0 !important; margin-bottom: 2.5em; }
+        .custom-case-card { margin-bottom: 1.8em !important; }
+    }
+
+    /* --- 修改点：增加背景图与黑色滤镜 --- */
+    #banner {
+        /* rgba(0,0,0,0.6) 表示60%透明度的黑色。如果你觉得太暗，改成 0.5；太亮改成 0.7 */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
 	</head>
 	<body class="landing is-preload">
 
