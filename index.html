@@ -8,98 +8,68 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-    /* 1. 核心布局优化：确保 PC 端横排，手机端自动换行 */
-    .features { 
-        display: flex !important; 
-        flex-wrap: wrap !important; 
-        justify-content: space-between !important; 
-        gap: 20px !important; 
-    }
-    .features section { 
-        flex: 1 1 22% !important; /* 每个占据约 22% 宽度 */
-        min-width: 220px !important; /* 小于此宽度自动换行 */
-        text-align: center !important; 
-    }
-
-    /* 2. 强制手机端响应式修复 */
-    @media screen and (max-width: 736px) {
-        .features section { 
-            flex: 1 1 100% !important; /* 手机端强制全屏宽，实现竖排 */
-            margin-bottom: 2em !important; 
-        }
-        /* 缩小图标，使其在手机上更精致 */
-        .features section .icon { font-size: 2.5rem !important; }
-
-        /* 强制消除底部表单的拉扯力 */
-        #cta .row.gtr-200 { display: block !important; margin-left: 0 !important; width: 100% !important; }
-        #cta .row.gtr-200 > div { width: 100% !important; max-width: 580px !important; margin: 0 auto 2.5em auto !important; padding-left: 0 !important; border-left: 0 !important; }
-    }
-
-    /* 3. 背景图保持不变 */
-    #banner {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-</style>
+            /* 1. 强制图标对齐 */
+            #nav > ul > li > a.menuToggle {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                height: 4em;
+                padding: 0 15px !important;
+            }
+            /* 2. 隐藏初始状态的列表 */
+            #langMenu, #menu { display: none !important; }
+            /* 3. 页面其他自定义样式 */
+            .features { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 20px !important; }
+            .features section { flex: 1 1 22% !important; min-width: 220px !important; text-align: center; }
+            @media screen and (max-width: 736px) {
+                .features section { flex: 1 1 100% !important; margin-bottom: 2em !important; }
+                #cta .row.gtr-200 { display: block !important; }
+            }
+            #banner { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg'); background-size: cover; background-position: center; }
+        </style>
 	</head>
 	<body class="landing is-preload">
 
 		<div id="page-wrapper">
 
-				<header id="header" class="alt">
-    <h1><a href="index.html">星远科技</a></h1>
-    <nav id="nav">
-        <ul>
-            <li>
-                <a href="#langMenu" class="menuToggle">
-                    <span class="icon solid fa-globe"></span>
-                </a>
-            </li>
-            <li class="special">
-                <a href="#menu" class="menuToggle"><span>菜单</span></a>
-            </li>
-        </ul>
-    </nav>
-</header>
+            <header id="header" class="alt">
+                <h1><a href="index.html">星远科技</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#langMenu" class="menuToggle"><span class="icon solid fa-globe"></span></a></li>
+                        <li class="special"><a href="#menu" class="menuToggle"><span>菜单</span></a></li>
+                    </ul>
+                </nav>
+            </header>
 
-<div id="langMenu">
-    <ul>
-        <li><a href="index.html">简体中文</a></li>
-        <li><a href="index_tc.html">繁体中文</a></li>
-        <li><a href="index_en.html">English</a></li>
-    </ul>
-</div>
+            <div id="langMenu">
+                <ul>
+                    <li><a href="index.html">简体中文</a></li>
+                    <li><a href="index_tc.html">繁体中文</a></li>
+                    <li><a href="index_en.html">English</a></li>
+                </ul>
+            </div>
 
-<div id="menu">
-    <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="#one">关于我们</a></li>
-        <li><a href="#mission">服务宗旨</a></li>
-        <li><a href="#culture">为什么选择我们</a></li>
-        <li><a href="#two">核心业务</a></li>
-        <li><a href="#three">合作案例见证</a></li>
-        <li><a href="#cta">联系我们</a></li>
-    </ul>
-</div>
-        </li>
-    </ul>
-</nav>
-					</header>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#one">关于我们</a></li>
+                    <li><a href="#mission">服务宗旨</a></li>
+                    <li><a href="#culture">为什么选择我们</a></li>
+                    <li><a href="#two">核心业务</a></li>
+                    <li><a href="#three">合作案例见证</a></li>
+                    <li><a href="#cta">联系我们</a></li>
+                </ul>
+            </div>
 
-				<section id="banner">
-						<div class="inner">
-							<h2>星远科技</h2>
-							<p>居家远程团队扩编 · 一站式人力托管服务商<br />
-							专注于居家办公团队的人才配置与基础行政托管支持</p>
-							<ul class="actions special">
-								<li><a href="#cta" class="button primary">洽谈合作</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">了解更多</a>
-					</section>
-
+            <section id="banner">
+                <div class="inner">
+                    <h2>星远科技</h2>
+                    <p>居家远程团队扩编 · 一站式人力托管服务商</p>
+                    <ul class="actions special"><li><a href="#cta" class="button primary">洽谈合作</a></li></ul>
+                </div>
+                <a href="#one" class="more scrolly">了解更多</a>
+            </section>
 				<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
