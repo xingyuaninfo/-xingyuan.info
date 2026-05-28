@@ -26,6 +26,38 @@
 				.features section { flex: 1 1 100% !important; margin-bottom: 2em !important; }
 				#cta .row.gtr-200 { display: block !important; }
 			}
+			/* 语言下拉菜单样式 */
+.lang-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 4em;
+    background: rgba(30, 35, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 10px 0;
+    min-width: 120px;
+    z-index: 10000;
+}
+.lang-dropdown .dropdown-content li {
+    display: block;
+    padding: 0;
+}
+.lang-dropdown .dropdown-content li a {
+    display: block;
+    padding: 8px 20px;
+    color: #fff !important;
+    font-size: 0.85em;
+    border: 0;
+    text-align: center;
+}
+.lang-dropdown .dropdown-content li a:hover {
+    background: rgba(33, 178, 166, 0.2);
+}
+/* 鼠标悬停时显示 */
+.lang-dropdown:hover .dropdown-content {
+    display: block;
+}
 			#banner { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg'); background-size: cover; background-position: center; }
 		</style>
 	</head>
@@ -34,14 +66,14 @@
 		<div id="page-wrapper">
 
 			<header id="header" class="alt">
-				<h1><a href="index.html">星远科技</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="#langMenu" class="menuToggle"><span class="icon solid fa-globe"></span></a></li>
-						<li class="special"><a href="#menu" class="menuToggle"><span>菜单</span></a></li>
-					</ul>
-				</nav>
-			</header>
+    <h1><a href="index.html">星远科技</a></h1>
+    <nav id="nav">
+        <ul>
+            </li>
+            <li class="special"><a href="#menu" class="menuToggle"><span>菜单</span></a></li>
+        </ul>
+    </nav>
+</header>
 
 			<div id="langMenu">
 				<ul>
