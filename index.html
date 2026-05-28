@@ -12,8 +12,19 @@
         .spotlight { flex-direction: column !important; }
         .spotlight .image { width: 100% !important; max-width: 100% !important; margin-bottom: 1.5em !important; }
         .spotlight .content { width: 100% !important; padding: 1em 0 !important; }
-        #cta .row.gtr-200 { display: block !important; }
-        #cta .row.gtr-200 > div { width: 100% !important; padding-left: 0 !important; border-left: 0 !important; margin-bottom: 2.5em; }
+/* 强制消除模板向左的拉扯力，并让整个表单和文字块居中 */
+#cta .row.gtr-200 { 
+    display: block !important; 
+    margin-left: 0 !important; 
+    width: 100% !important; 
+}
+#cta .row.gtr-200 > div { 
+    width: 100% !important; 
+    max-width: 580px !important; 
+    margin: 0 auto 2.5em auto !important; /* 这句就是让整个红框居中的关键 */
+    padding-left: 0 !important; 
+    border-left: 0 !important; 
+}
         .custom-case-card { margin-bottom: 1.8em !important; }
     }
 
