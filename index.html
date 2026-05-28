@@ -7,26 +7,22 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* 核心修复：手机端排版自动由左右并排变为上下堆叠，防止文字挤压 */
+			/* 核心响应式修复：确保手机端排版顺畅 */
 			@media screen and (max-width: 736px) {
-				.features {
-					display: block !important;
-				}
-				.features section {
-					width: 100% !important;
-					border-left: 0 !important;
-					border-top: solid 1px rgba(255, 255, 255, 0.1);
-					padding: 2em 0 !important;
-				}
-				#three .features {
-					display: flex !important;
+				/* 使为什么选择我们的图片和内容在手机端变为上下堆叠 */
+				.spotlight {
 					flex-direction: column !important;
 				}
-				#three .features section {
-					margin-bottom: 20px !important;
+				.spotlight .image {
 					width: 100% !important;
+					max-width: 100% !important;
+					margin-bottom: 1.5em !important;
 				}
-				/* 手机端联系我们板块由左右布局自动切换为上下布局 */
+				.spotlight .content {
+					width: 100% !important;
+					padding: 1em 0 !important;
+				}
+				/* 联系我们板块由左右布局自动切换为上下堆叠 */
 				#cta .row.gtr-200 {
 					display: block !important;
 				}
@@ -34,7 +30,11 @@
 					width: 100% !important;
 					padding-left: 0 !important;
 					border-left: 0 !important;
-					margin-bottom: 2em;
+					margin-bottom: 2.5em;
+				}
+				/* 成功案例卡片手机端间距调优 */
+				.custom-case-card {
+					margin-bottom: 1.5em !important;
 				}
 			}
 		</style>
@@ -118,35 +118,35 @@
 								<p>高效、稳定、灵活、省心，协助企业建立长期可靠的离岸团队支持体系。</p>
 							</header>
 							
-							<div class="spotlight" style="padding: 3em 0;">
-								<div class="image" style="background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; min-height: 250px; border-radius: 8px;"><span class="icon solid fa-user-search" style="font-size: 5rem; color: #21b2a6;"></span></div>
-								<div class="content">
-									<h3>精准人才匹配</h3>
-									<p>依托马来西亚及东南亚多元人才网络，我们根据企业岗位需求、语言能力及技能要求进行筛选，协助快速匹配符合业务需求的远程人才。</p>
+							<div class="spotlight" style="padding: 2em 0; display: flex; align-items: center; gap: 2em;">
+								<div class="image" style="background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; min-height: 200px; width: 30%; max-width: 240px; border-radius: 8px; flex-shrink: 0;"><span class="icon solid fa-user-check" style="font-size: 4rem; color: #21b2a6;"></span></div>
+								<div class="content" style="width: 70%; padding: 0;">
+									<h3 style="margin-bottom: 0.5em;">精准人才匹配</h3>
+									<p style="margin: 0;">依托马来西亚及东南亚多元人才网络，我们根据企业岗位需求、语言能力及技能要求进行筛选，协助快速匹配符合业务需求的远程人才。</p>
 								</div>
 							</div>
 
-							<div class="spotlight" style="padding: 3em 0;">
-								<div class="image" style="background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; min-height: 250px; border-radius: 8px;"><span class="icon solid fa-business-time" style="font-size: 5rem; color: #21b2a6;"></span></div>
-								<div class="content">
-									<h3>稳定的团队管理支持</h3>
-									<p>我们协助企业进行日常团队协调与基础管理，包括考勤追踪、纪律维护及远程办公支持，确保团队稳定运作，并配合企业既有流程与管理规范。</p>
+							<div class="spotlight" style="padding: 2em 0; display: flex; align-items: center; gap: 2em;">
+								<div class="image" style="background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; min-height: 200px; width: 30%; max-width: 240px; border-radius: 8px; flex-shrink: 0;"><span class="icon solid fa-tasks" style="font-size: 4rem; color: #21b2a6;"></span></div>
+								<div class="content" style="width: 70%; padding: 0;">
+									<h3 style="margin-bottom: 0.5em;">稳定的团队管理支持</h3>
+									<p style="margin: 0;">我们协助企业进行日常团队协调与基础管理，包括考勤追踪、纪律维护及远程办公支持，确保团队稳定运作，并配合企业既有流程与管理规范。</p>
 								</div>
 							</div>
 
-							<div class="spotlight" style="padding: 3em 0;">
-								<div class="image" style="background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; min-height: 250px; border-radius: 8px;"><span class="icon solid fa-wallet" style="font-size: 5rem; color: #21b2a6;"></span></div>
-								<div class="content">
-									<h3>更轻松的运营模式</h3>
-									<p>减少企业在跨区域招聘与团队管理上的时间成本与沟通负担。通过标准化托管支持，帮助企业更专注于核心业务发展与团队效率提升。</p>
+							<div class="spotlight" style="padding: 2em 0; display: flex; align-items: center; gap: 2em;">
+								<div class="image" style="background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; min-height: 200px; width: 30%; max-width: 240px; border-radius: 8px; flex-shrink: 0;"><span class="icon solid fa-chart-line" style="font-size: 4rem; color: #21b2a6;"></span></div>
+								<div class="content" style="width: 70%; padding: 0;">
+									<h3 style="margin-bottom: 0.5em;">更轻松的运营模式</h3>
+									<p style="margin: 0;">减少企业在跨区域招聘与团队管理上的时间成本与沟通负担。通过标准化托管支持，帮助企业更专注于核心业务发展与团队效率提升。</p>
 								</div>
 							</div>
 
-							<div class="spotlight" style="padding: 3em 0;">
-								<div class="image" style="background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; min-height: 250px; border-radius: 8px;"><span class="icon solid fa-expand-arrows-alt" style="font-size: 5rem; color: #21b2a6;"></span></div>
-								<div class="content">
-									<h3>灵活且可扩展</h3>
-									<p>无论是单一岗位扩充或团队规模增长，我们都能根据企业不同阶段需求，提供更具弹性的人才配置与远程团队支持。</p>
+							<div class="spotlight" style="padding: 2em 0; display: flex; align-items: center; gap: 2em;">
+								<div class="image" style="background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; min-height: 200px; width: 30%; max-width: 240px; border-radius: 8px; flex-shrink: 0;"><span class="icon solid fa-sliders-h" style="font-size: 4rem; color: #21b2a6;"></span></div>
+								<div class="content" style="width: 70%; padding: 0;">
+									<h3 style="margin-bottom: 0.5em;">灵活且可扩展</h3>
+									<p style="margin: 0;">无论是单一岗位扩充或团队规模增长，我们都能根据企业不同阶段需求，提供更具弹性的人才配置与远程团队支持。</p>
 								</div>
 							</div>
 						</div>
@@ -165,7 +165,7 @@
 									<p>根据企业业务需求，提供网页开发、系统维护、数据分析等技术岗位人才配置。依托精准的人才筛选机制，协助企业快速建立稳定、高契合度的技术团队，以满足不同阶段的业务发展需求。</p>
 								</section>
 								<section>
-									<span class="icon solid fa-shield-alt"></span>
+									<span class="icon solid fa-user-shield"></span>
 									<h3>后台审核与运营团队</h3>
 									<p>提供数据录入、内容审核、后台处理及运营支持等岗位人才配置，协助企业建立稳定、高效的后台团队，满足日常业务处理及运营协作需求。</p>
 								</section>
@@ -175,15 +175,15 @@
 									<p>配置具备专业经验与国际化视野的设计人才，涵盖平面设计、品牌视觉、多媒体内容及相关创意岗位，为企业提供稳定的数字内容与视觉支持。</p>
 								</section>
 								<section>
-									<span class="icon solid fa-comments"></span>
+									<span class="icon solid fa-align-left"></span>
 									<h3>多语言线上文本支持团队</h3>
 									<p>提供纯文本、非语音的多语言线上支持人员配置，适用于在线咨询、平台沟通及日常文字服务场景，协助企业优化沟通效率与服务体验。</p>
 								</section>
 							</div>
 							
-							<div style="background: rgba(255,255,255,0.02); padding: 30px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); margin-top: 30px; text-align: left;">
-								<h3 style="font-size: 1.2rem; color: #21b2a6; margin-bottom: 10px;"><span class="icon solid fa-info-circle" style="margin-right: 10px;"></span>基础托管与考勤支持</h3>
-								<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.7);">所有团队均采用居家远程办公模式。星远科技协助进行基础考勤记录、上线时长跟进及日常纪律维护，以确保团队稳定运作；具体业务流程、工作安排、工作表现及绩效管理则由合作企业自行监督与管理。</p>
+							<div style="background: rgba(255,255,255,0.02); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); margin-top: 4em; margin-bottom: 1em; text-align: left;">
+								<h3 style="font-size: 1.25rem; color: #21b2a6; margin-bottom: 12px; display: flex; align-items: center; gap: 10px;"><span class="icon solid fa-info-circle" style="font-size: 1.2rem;"></span> 基础托管与考勤支持</h3>
+								<p style="margin: 0; font-size: 0.95rem; line-height: 1.8; color: rgba(255,255,255,0.75);">所有团队均采用居家远程办公模式。星远科技协助进行基础考勤记录、上线时长跟进及日常纪律维护，以确保团队稳定运作；具体业务流程、工作安排、工作表现及绩效管理则由合作企业自行监督与管理。</p>
 							</div>
 						</div>
 					</section>
@@ -194,62 +194,70 @@
 								<h2>合作案例见证</h2>
 								<p>以稳定的团队运营能力与成熟的远程管理机制，协助企业建立长期、可靠且高效的离岸团队支持体系。</p>
 							</header>
-							<div class="features">
-								<section style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: left;">
-									<span class="icon solid fa-headset" style="font-size: 2rem; color: #21b2a6; margin-bottom: 0.5em; display: inline-block;"></span>
-									<h3>海外平台多语言客服团队托管</h3>
-									<p>成功协助某海外线上平台搭建并托管 50 人多语言客服团队，采用三班轮值制度，涵盖排班协调、基础考勤维护及日常团队管理支持。团队持续稳定运营超过 2 年，整体运作流畅，服务稳定性获得合作方认可。</p>
-								</section>
-								<section style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: left;">
-									<span class="icon solid fa-folder-open" style="font-size: 2rem; color: #21b2a6; margin-bottom: 0.5em; display: inline-block;"></span>
-									<h3>平台运营与风险审核团队配置</h3>
-									<p>根据企业业务需求，定向配置并协助管理运营支持与风险审核岗位团队，负责后台资料审核、异常数据处理及日常运营协作。通过标准化协作流程与基础纪律维护，协助企业维持稳定运营效率。</p>
-								</section>
-								<section style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: left;">
-									<span class="icon solid fa-clock" style="font-size: 2rem; color: #21b2a6; margin-bottom: 0.5em; display: inline-block;"></span>
-									<h3>在线客服与值班支持团队</h3>
-									<p>为跨境线上业务配置纯文本客服、在线支持及值班协调岗位人员，满足企业多时段运营需求。通过轮班制度与上线时长跟进，确保服务覆盖稳定性与团队出勤表现。</p>
-								</section>
-								<section style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 8px; text-align: left;">
-									<span class="icon solid fa-credit-card" style="font-size: 2rem; color: #21b2a6; margin-bottom: 0.5em; display: inline-block;"></span>
-									<h3>支付与订单支持团队配置</h3>
-									<p>针对第三方支付及订单查询场景，配置查单支持、文本客服及后台协作岗位人员，协助企业优化用户沟通效率与日常业务处理流程，并提升整体服务响应效率。</p>
-								</section>
+							
+							<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: left;">
+								
+								<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+									<span class="icon solid fa-headset" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+									<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;">海外平台多语言客服团队托管</h3>
+									<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">成功协助某海外线上平台搭建并托管 50 人多语言客服团队，采用三班轮值制度，涵盖排班协调、基础考勤维护及日常团队管理支持。团队持续稳定运营超过 2 年，整体运作流畅，服务稳定性获得合作方认可。</p>
+								</div>
+
+								<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+									<span class="icon solid fa-folder-open" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+									<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;">平台运营与风险审核团队配置</h3>
+									<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">根据企业业务需求，定向配置并协助管理运营支持与风险审核岗位团队，负责后台资料审核、异常数据处理及日常运营协作。通过标准化协作流程与基础纪律维护，协助企业维持稳定运营效率。</p>
+								</div>
+
+								<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+									<span class="icon solid fa-clock" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+									<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;">在线客服与值班支持团队</h3>
+									<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">为跨境线上业务配置纯文本客服、在线支持及值班协调岗位人员，满足企业多时段运营需求。通过轮班制度与上线时长跟进，确保服务覆盖稳定性与团队出勤表现。</p>
+								</div>
+
+								<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+									<span class="icon solid fa-credit-card" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+									<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px;">支付与订单支持团队配置</h3>
+									<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">针对第三方支付及订单查询场景，配置查单支持、文本客服及后台协作岗位人员，协助企业优化用户沟通效率与日常业务处理流程，并提升整体服务响应效率。</p>
+								</div>
+
 							</div>
 						</div>
 					</section>
 
 				<section id="cta" class="wrapper style4">
-						<div class="inner" style="max-width: 1000px; margin: 0 auto; padding: 4em 2em;">
+						<div class="inner" style="max-width: 1100px; margin: 0 auto; padding: 4em 2em;">
 							<div class="row gtr-200" style="display: flex; align-items: flex-start; gap: 4em;">
 								
-								<div style="flex: 1.2; max-width: 550px;">
-									<form method="post" action="https://formspree.io/f/your_form_id_here" style="margin: 0;">
+								<div style="flex: 1.2; max-width: 580px;">
+									<form method="post" action="https://formspree.io/f/your_form_id_here" style="margin: 0; padding: 0;">
 										<div class="row gtr-uniform">
 											<div class="col-12" style="margin-bottom: 1.2em; padding-left: 0;">
-												<input type="text" name="name" placeholder="您的姓名" required style="color:#fff; background:rgba(0,0,0,0.3); width: 100%; border-radius: 4px;" />
+												<input type="text" name="name" id="name" value="" placeholder="您的姓名" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
 											</div>
 											<div class="col-12" style="margin-bottom: 1.2em; padding-left: 0;">
-												<input type="email" name="email" placeholder="电子邮箱" required style="color:#fff; background:rgba(0,0,0,0.3); width: 100%; border-radius: 4px;" />
+												<input type="email" name="email" id="email" value="" placeholder="电子邮箱" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
 											</div>
 											<div class="col-12" style="margin-bottom: 1.5em; padding-left: 0;">
-												<textarea name="message" placeholder="您的需求描述" rows="4" required style="color:#fff; background:rgba(0,0,0,0.3); width: 100%; border-radius: 4px;"></textarea>
+												<textarea name="message" id="message" placeholder="您的需求描述" rows="4" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; line-height: 1.6; border: 1px solid rgba(255,255,255,0.15);"></textarea>
 											</div>
 											<div class="col-12" style="text-align: left; padding-left: 0;">
-												<ul class="actions" style="justify-content: flex-start; margin: 0;">
-													<li><input type="submit" value="提交咨询" class="primary" style="padding: 0 3em; border-radius: 4px;" /></li>
+												<ul class="actions" style="margin: 0; padding: 0; justify-content: flex-start;">
+													<li><input type="submit" value="提交咨询" class="primary" style="height: 3.25em; line-height: 3.25em; padding: 0 3.5em; font-weight: 600; border-radius: 4px; letter-spacing: 1px;" /></li>
 												</ul>
 											</div>
 										</div>
 									</form>
 								</div>
 
-								<div style="flex: 0.8; padding-left: 2em; border-left: 1px solid rgba(255,255,255,0.1);">
-									<h2 style="font-size: 1.8rem; line-height: 1.4; margin-bottom: 0.8em;">打造属于您的离岸远程团队</h2>
-									<p style="color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2em;">星远科技专注于居家远程办公团队的人才配置与基础托管支持，协助企业快速建立稳定、高匹配度且具成本优势的跨区域团队，让企业更专注于核心业务发展。</p>
-									<div style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);">
-										<p style="margin: 0; font-size: 0.9rem; color: #21b2a6; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">官方联络邮箱</p>
-										<p style="margin: 0; font-size: 1.1rem; font-weight: 600;">contact@xingyuan.info</p>
+								<div style="flex: 0.8; padding-left: 2.5em; border-left: 1px solid rgba(255,255,255,0.12);">
+									<h2 style="font-size: 1.8rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.8em; letter-spacing: 1px;">打造属于您的离岸远程团队</h2>
+									<p style="color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2em; font-size: 0.95rem;">
+										星远科技专注于居家远程办公团队的人才配置与基础托管支持，协助企业快速建立稳定、高匹配度且具成本优势的跨区域团队，让企业更专注于核心业务发展。
+									</p>
+									<div style="background: rgba(255,255,255,0.03); padding: 22px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+										<p style="margin: 0; font-size: 0.85rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">官方联络邮箱</p>
+										<p style="margin: 0; font-size: 1.15rem; font-weight: 600; color: #21b2a6; letter-spacing: 0.5px;">contact@xingyuan.info</p>
 									</div>
 								</div>
 
