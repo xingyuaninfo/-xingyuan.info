@@ -9,28 +9,39 @@
 		<style>
     /* 核心响应式修复 */
     @media screen and (max-width: 736px) {
-        .spotlight { flex-direction: column !important; }
-        .spotlight .image { width: 100% !important; max-width: 100% !important; margin-bottom: 1.5em !important; }
-        .spotlight .content { width: 100% !important; padding: 1em 0 !important; }
-/* 强制消除模板向左的拉扯力，并让整个表单和文字块居中 */
-#cta .row.gtr-200 { 
-    display: block !important; 
-    margin-left: 0 !important; 
-    width: 100% !important; 
-}
-#cta .row.gtr-200 > div { 
-    width: 100% !important; 
-    max-width: 580px !important; 
-    margin: 0 auto 2.5em auto !important; /* 这句就是让整个红框居中的关键 */
-    padding-left: 0 !important; 
-    border-left: 0 !important; 
-}
+        .spotlight { flex-direction: column !important; text-align: center !important; }
+        .spotlight .image { width: 100% !important; max-width: 120px !important; margin: 0 auto 1em auto !important; min-height: 120px !important; }
+        .spotlight .content { width: 100% !important; padding: 0 !important; }
+        
+        /* 手机端缩小图标 */
+        .spotlight .image .icon { font-size: 2.5rem !important; }
+        
+        /* 强制消除模板向左的拉扯力，并让整个表单和文字块居中 */
+        #cta .row.gtr-200 { display: block !important; margin-left: 0 !important; width: 100% !important; }
+        #cta .row.gtr-200 > div { width: 100% !important; max-width: 580px !important; margin: 0 auto 2.5em auto !important; padding-left: 0 !important; border-left: 0 !important; }
         .custom-case-card { margin-bottom: 1.8em !important; }
     }
 
-    /* --- 修改点：增加背景图与黑色滤镜 --- */
+    /* --- PC端布局：将左右布局改为上下居中布局 --- */
+    .spotlight { 
+        display: flex !important; 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        text-align: center !important; 
+        padding: 2em 0 !important; 
+    }
+    .spotlight .image { 
+        width: 100% !important; 
+        max-width: 150px !important; 
+        margin-bottom: 1em !important; 
+        min-height: 150px !important; 
+        display: flex !important; 
+        align-items: center !important; 
+        justify-content: center !important;
+    }
+    .spotlight .content { width: 100% !important; max-width: 600px !important; padding: 0 !important; }
+
     #banner {
-        /* rgba(0,0,0,0.6) 表示60%透明度的黑色。如果你觉得太暗，改成 0.5；太亮改成 0.7 */
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
         background-size: cover;
         background-position: center;
