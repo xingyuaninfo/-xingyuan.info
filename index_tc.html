@@ -1,62 +1,280 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>星遠科技 - 居家遠端團隊擴編 · 一站式人力託管服務商</title>
+		<title>星遠科技 - 居家遠程團隊擴編 · 一站式人力託管服務商</title>
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="星遠科技專注於面向線上化及跨境業務場景，提供居家遠端辦公團隊的人才招募、團隊配置及基礎託管支持。依託東南亞多元人才網路，協助企業建立穩定、高效且具成本優勢的離岸技術、審核、設計與多語言線上支持團隊。" />
-		<meta name="keywords" content="星遠科技,遠端團隊擴編,離岸團隊建設,人力託管服務,遠端辦公招聘,東南亞人才配置,多語言客服外包,技術團隊託管" />
+		
+		<meta name="description" content="星遠科技專注於面向線上化及跨境業務場景，提供居家遠程辦公團隊的人才招募、團隊配置及基礎託管支持。依託東南亞多元人才網絡，協助企業建立穩定、高效且具成本優勢的離岸技術、審核、設計與多語言線上支持團隊。" />
+		
+		<meta name="keywords" content="星遠科技,遠程團隊擴編,離岸團隊建設,人力託管服務,遠程辦公招聘,東南亞人才配置,多語言客服外包,技術團隊託管" />
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			#nav > ul > li > a.menuToggle { display: flex !important; align-items: center; justify-content: center; height: 4em; padding: 0 15px !important; }
+			/* 1. 强制图标对齐 */
+			#nav > ul > li > a.menuToggle {
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				height: 4em;
+				padding: 0 15px !important;
+			}
+			
+			/* 2. 页面其他自定义样式 */
 			.features { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 20px !important; }
 			.features section { flex: 1 1 22% !important; min-width: 220px !important; text-align: center; }
-			@media screen and (max-width: 736px) { .features section { flex: 1 1 100% !important; margin-bottom: 2em !important; } #cta .row.gtr-200 { display: block !important; } }
+			@media screen and (max-width: 736px) {
+				.features section { flex: 1 1 100% !important; margin-bottom: 2em !important; }
+				#contact .row.gtr-200 { display: block !important; }
+			}
 			#banner { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg'); background-size: cover; background-position: center; }
 		</style>
 	</head>
 	<body class="landing is-preload">
+
 		<div id="page-wrapper">
+
 			<header id="header" class="alt">
 				<h1><a href="index_tc.html">星遠科技</a></h1>
 				<nav id="nav">
-					<ul><li class="special"><a href="#menu" class="menuToggle"><span>選單 / Language</span></a></li></ul>
+					<ul>
+						<li class="special"><a href="#menu" class="menuToggle"><span>菜單 / Language</span></a></li>
+					</ul>
 				</nav>
 			</header>
 
 			<div id="menu">
-				<ul>
-					<li class="lang-switcher-row" style="border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.8em; margin-bottom: 0.8em; text-align: center; background: none !important;">
-						<a href="index.html" class="lang-link" style="color: rgba(255,255,255,0.6) !important;">簡體</a> | 
-						<a href="index_tc.html" class="lang-link active" style="color: #fff000 !important; font-weight:bold !important;">繁體</a> | 
-						<a href="index_en.html" class="lang-link" style="color: rgba(255,255,255,0.6) !important;">EN</a>
-					</li>
-					<li><a href="index_tc.html">首頁</a></li>
-					<li><a href="#one">關於我們</a></li>
-					<li><a href="#mission">服務宗旨</a></li>
-					<li><a href="#culture">為什麼選擇我們</a></li>
-					<li><a href="#two">核心業務</a></li>
-					<li><a href="#three">合作案例見證</a></li>
-					<li><a href="#cta">聯繫我們</a></li>
-				</ul>
-			</div>
+    <ul>
+        <li class="lang-switcher-row" style="border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.8em; margin-bottom: 0.8em; text-align: center; background: none !important;">
+            <span class="icon solid fa-globe" style="margin-right: 6px; color: rgba(255,255,255,0.6); display: inline-block; vertical-align: middle;"></span>
+            
+            <a href="index.html" class="lang-link" style="display:inline !important; font-size:0.9em !important; font-weight: normal !important; color: rgba(255,255,255,0.6) !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">简体</a> 
+            <span style="color: rgba(255,255,255,0.3);">|</span> 
+            
+            <a href="index_tc.html" class="lang-link active" style="display:inline !important; font-size:0.9em !important; font-weight: bold !important; color: #fff000 !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">繁体</a> 
+            <span style="color: rgba(255,255,255,0.3);">|</span> 
+            
+            <a href="index_en.html" class="lang-link" style="display:inline !important; font-size:0.9em !important; font-weight: normal !important; color: rgba(255,255,255,0.6) !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">EN</a>
+        </li>
+        <li><a href="/">首頁</a></li>
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#mission">服務宗旨</a></li>
+        <li><a href="#why-us">為什麼選擇我們</a></li>
+        <li><a href="#services">核心業務</a></li>
+        <li><a href="#testimonials">合作案例見證</a></li>
+        <li><a href="#contact">聯繫我們</a></li>
+    </ul>
+</div>
 
 			<section id="banner">
 				<div class="inner">
 					<h2>星遠科技</h2>
-					<p>居家遠端團隊擴編 · 一站式人力託管服務商<br />
-					專注於居家辦公團隊的人才配置與基礎行政託管支持</p>
-					<ul class="actions special"><li><a href="#cta" class="button primary">洽談合作</a></li></ul>
+					<p>居家遠程團隊擴編 · 一站式人力託管服務商<br />
+							專注於居家辦公團隊的人才配置與基礎行政託管支持</p>
+					<ul class="actions special"><li><a href="#contact" class="button primary">洽談合作</a></li></ul>
 				</div>
-				<a href="#one" class="more scrolly">了解更多</a>
+				<a href="#about" class="more scrolly">了解更多</a>
 			</section>
 
-			<!-- 其餘內容請保持與上述結構一致，僅需將文案替換為繁體即可，例如將「关于我们」改為「關於我們」 -->
-			<!-- (因篇幅限制，後續段落替換邏輯與此相同) -->
+			<section id="about" class="wrapper style1 special">
+				<div class="inner">
+					<header class="major">
+						<h2>關於我們</h2>
+						<p>星遠科技專注於為各類線上平台及數字化企業提供專業的遠程人才配置與人力行政託管服務</p>
+						<p>公司主要提供人才招募、團隊配置、人員管理及運營協調服務，協助合作企業根據業務需求建立高效的遠程工作團隊。不同於傳統實體辦公模式，星遠科技專注於提供靈活的遠程辦公服務，以滿足企業擴展及運營效率需求。</p>
+						<p>公司以馬來西亞人才資源為核心，同時也涵蓋越南、緬甸、泰國等東南亞國家的人才招募與配置。通過整合區域性人才網絡與遠程人力資源管理經驗，星遠科技為合作夥伴提供穩定、靈活且具成本效益的人力資源解決方案。</p>
+					</header>
+				</div>
+			</section>
+
+			<section id="mission" class="wrapper style3 special">
+				<div class="inner" style="max-width: 800px; margin: 0 auto;">
+					<div style="background: rgba(255,255,255,0.03); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px; text-align: center;">
+						<span class="icon solid fa-rocket" style="font-size: 2.5rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+						<h3 style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px;">使命</h3>
+						<p style="max-width: 650px; margin: 0 auto; line-height: 1.8; color: rgba(255,255,255,0.85);">
+							提供值得信賴的遠程人力解決方案，通過精準人才匹配、系統化管理及穩定運營支持，幫助企業高效擴展團隊規模。
+						</p>
+					</div>
+
+					<div style="background: rgba(255,255,255,0.03); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+						<span class="icon solid fa-eye" style="font-size: 2.5rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+						<h3 style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px;">願景</h3>
+						<p style="max-width: 650px; margin: 0 auto; line-height: 1.8; color: rgba(255,255,255,0.85);">
+							重新定義全球人才協作模式，讓遠程團隊建設更加高效、可擴展且可持續。
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="why-us" class="wrapper style2">
+				<div class="inner">
+					<header class="major special">
+						<h2>為什麼選擇我們</h2>
+						<p>高效、穩定、靈活、省心，協助企業建立長期可靠的遠程團隊支持體系。</p>
+					</header>
+
+					<div class="features">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-user-check" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>精準人才匹配</h3>
+							<p style="font-size: 0.9rem;">依託東南亞多元人才網絡，根據需求篩選，協助快速匹配遠程人才。</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-tasks" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>穩定團隊管理支持</h3>
+							<p style="font-size: 0.9rem;">協助進行考勤追蹤與紀律維護，確保團隊穩定運作，配合企業管理規範。</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-chart-line" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>更輕鬆的運營模式</h3>
+							<p style="font-size: 0.9rem;">減少跨區域招聘溝通成本，通過標準化託管，助力企業專注核心業務。</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-sliders-h" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>靈活且可擴展</h3>
+							<p style="font-size: 0.9rem;">無論是單崗位還是團隊增長，均可提供彈性的人才配置與支持。</p>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="wrapper style1 special">
+				<div class="inner">
+					<header class="major">
+						<h2>核心業務</h2>
+						<p>面向線上化及跨境業務場景，星遠科技專注於提供居家遠程辦公團隊的人才招募、團隊配置及基礎託管支持，協助企業建立穩定、高匹配度且具成本優勢的遠程團隊。</p>
+					</header>
+					<div class="features">
+						<section>
+							<span class="icon solid fa-code"></span>
+							<h3>技術與數據支持團隊</h3>
+							<p>根據企業業務需求，提供網頁開發、系統維護、數據分析等技術崗位人才配置。依託精準的人才篩選機制，協助企業快速建立穩定、高契合度的技術團隊，以滿足不同階段的業務發展需求。</p>
+						</section>
+						<section>
+							<span class="icon solid fa-user-shield"></span>
+							<h3>後台審核與運營團隊</h3>
+							<p>提供數據錄入、內容審核、後台處理及行政管理支持等崗位人才配置，協助企業建立穩定、高效的後台團隊，滿足日常業務處理及運營協作需求。</p>
+						</section>
+						<section>
+							<span class="icon solid fa-paint-brush"></span>
+							<h3>創意與視覺設計團隊</h3>
+							<p>配置具備專業經驗與國際化視野的設計人才，涵蓋平面設計、品牌視覺、多媒體內容及相關創意崗位，為企業提供穩定的數字內容與視覺支持。</p>
+						</section>
+						<section>
+							<span class="icon solid fa-align-left"></span>
+							<h3>多語言線上支持團隊</h3>
+							<p>提供純文本、非語音的多語言線上支持人員配置，適用於在線諮詢、平台溝通及日常文字服務場景，協助企業優化溝通效率與服務體驗。</p>
+						</section>
+					</div>
+
+					<div style="background: rgba(16, 46, 44, 0.35); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); margin: 4em auto 1em auto; max-width: 100%; width: 100%; text-align: left; box-sizing: border-box;">
+						<h3 style="font-size: 1.35rem; color: #ffffff !important; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;">
+							<span class="icon solid fa-info-circle" style="color: #21b2a6; font-size: 1.3rem;"></span> 基礎託管與考勤支持
+						</h3>
+						<p style="margin: 0; font-size: 0.95rem; line-height: 1.8; color: rgba(255, 255, 255, 0.82);">所有團隊均採用居家遠程辦公模式。星遠科技協助進行基礎考勤記錄、上線時長跟進及日常紀律維護，以確保團隊穩定運作；具體業務流程、工作安排、工作表現及績效管理則由合作企業自行監督與管理。</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="testimonials" class="wrapper style3 special">
+				<div class="inner">
+					<header class="major">
+						<h2>合作案例見證</h2>
+						<p>以穩定的團隊運營能力與成熟的遠程管理機制，協助企業建立長期、可靠且高效的離岸團隊支持體系。</p>
+					</header>
+
+					<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: left;">
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-headset" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">海外平台多語言客服團隊託管</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">成功協助某海外線上平台搭建並託管 50 人多語言客服團隊，採用三班輪值制度，涵蓋排班協調、基礎考勤維護及日常團隊管理支持。團隊持續穩定運營超過 2 年，整體運作流暢，服務穩定性獲得合作方認可。</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-folder-open" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">平台運營與風險審核團隊配置</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">根據企業業務需求，定向配置並協助管理運營支持與風險審核崗位團隊，負責後台資料審核、異常數據處理及日常運營協作。通過標準化協作流程與基礎紀律維護，協助企業維持穩定運營效率。</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-clock" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">在線客服與值班支持團隊</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">為跨境線上業務配置純文本客服、在線支持及值班協調崗位人員，滿足企業多時段運營需求。通過輪班制度與上線時長跟進，確保服務覆蓋穩定性與團隊出勤表現。</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-credit-card" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">支付與訂單支持團隊配置</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">針對第三方支付及訂單查詢場景，配置查單支持、文本客服及後台協作崗位人員，協助企業優化用戶溝通效率與日常業務處理流程，並提升整體服務響應效率。</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="wrapper style4">
+				<div class="inner" style="max-width: 1100px; margin: 0 auto; padding: 4em 2em;">
+					<div class="row gtr-200" style="display: flex; align-items: flex-start; gap: 4em;">
+
+						<div style="flex: 1.2; max-width: 580px; margin: 0 auto; width: 100%;">
+							<form method="post" action="https://formspree.io/f/mykvlqjk" style="margin: 0; padding: 0;">
+								<div class="row gtr-uniform">
+									<div class="col-12" style="margin-bottom: 1.2em;">
+										<input type="text" name="name" id="name" value="" placeholder="您的姓名" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
+									</div>
+									<div class="col-12" style="margin-bottom: 1.2em;">
+										<input type="email" name="email" id="email" value="" placeholder="電子郵箱" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
+									</div>
+									<div class="col-12" style="margin-bottom: 1.5em;">
+										<textarea name="message" id="message" placeholder="您的需求描述" rows="4" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; line-height: 1.6; border: 1px solid rgba(255,255,255,0.15);"></textarea>
+									</div>
+									<div class="col-12" style="text-align: left;">
+										<ul class="actions" style="margin: 0; padding: 0; justify-content: flex-start;">
+											<li style="width: 100%; padding-left: 0;"><input type="submit" value="提交諮詢" class="primary" style="width: 100%; height: 3.25em; line-height: 3.25em; padding: 0 1em; font-weight: 600; border-radius: 4px; letter-spacing: 1px;" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div style="flex: 0.8; padding-left: 2.5em; border-left: 1px solid rgba(255,255,255,0.12);">
+							<h2 style="font-size: 1.8rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.8em; letter-spacing: 1px;">打造屬於您的遠程團隊</h2>
+							<p style="color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2em; font-size: 0.95rem;">
+								星遠科技專注於居家遠程辦公團隊的人才配置與基礎託管支持，協助企業快速建立穩定、高匹配度且具成本優勢的跨區域團隊，讓企業更專注於核心業務發展。
+							</p>
+							<div style="background: rgba(255,255,255,0.03); padding: 22px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+								<p style="margin: 0; font-size: 0.85rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">官方聯絡郵箱</p>
+								<p style="margin: 0; font-size: 1.15rem; font-weight: 600; color: #21b2a6; letter-spacing: 0.5px;">contact@xingyuan.info</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://t.me/XingYuan_BR" target="_blank" rel="noopener noreferrer" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+					<li><a href="mailto:contact@xingyuan.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2026 星遠科技 XINGYUAN. 保留所有權利。</li>
+				</ul>
+			</footer>
+
 		</div>
-        <!-- 引入 JS -->
-		<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.scrollex.min.js"></script><script src="assets/js/jquery.scrolly.min.js"></script><script src="assets/js/browser.min.js"></script><script src="assets/js/breakpoints.min.js"></script><script src="assets/js/util.js"></script><script src="assets/js/main.js"></script>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
