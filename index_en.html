@@ -1,53 +1,280 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>XingYuan Tech - Remote Team Expansion · One-stop HR Managed Services</title>
+		<title>XingYuan Tech - Remote Team Expansion & One-Stop HR Hosting Services</title>
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="XingYuan Tech specializes in talent recruitment, team configuration, and administrative support for remote work teams, catering to online and cross-border businesses. Leveraging a diverse talent network in Southeast Asia, we help companies build stable, efficient, and cost-effective offshore teams." />
-		<meta name="keywords" content="XingYuan Tech, Remote Team Expansion, Offshore Team Building, Managed HR Services, Remote Staffing, Southeast Asia Talent, Multilingual Customer Support" />
+		
+		<meta name="description" content="XingYuan Tech specializes in remote team recruitment, staffing, and basic HR hosting for online and cross-border businesses. Leveraging Southeast Asia's diverse talent network, we help build stable, efficient, and cost-effective offshore tech, moderation, design, and multilingual support teams." />
+		
+		<meta name="keywords" content="XingYuan Tech, remote team expansion, offshore team building, HR hosting services, remote office recruitment, Southeast Asia talent staffing, multilingual customer service outsourcing, tech team hosting" />
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-            /* 保持與原版相同的樣式調整 */
+			/* 1. 强制图标对齐 */
+			#nav > ul > li > a.menuToggle {
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				height: 4em;
+				padding: 0 15px !important;
+			}
+			
+			/* 2. 页面其他自定义样式 */
+			.features { display: flex !important; flex-wrap: wrap !important; justify-content: space-between !important; gap: 20px !important; }
+			.features section { flex: 1 1 22% !important; min-width: 220px !important; text-align: center; }
+			@media screen and (max-width: 736px) {
+				.features section { flex: 1 1 100% !important; margin-bottom: 2em !important; }
+				#contact .row.gtr-200 { display: block !important; }
+			}
+			#banner { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.jpg'); background-size: cover; background-position: center; }
 		</style>
 	</head>
 	<body class="landing is-preload">
+
 		<div id="page-wrapper">
+
 			<header id="header" class="alt">
 				<h1><a href="index_en.html">XingYuan Tech</a></h1>
 				<nav id="nav">
-					<ul><li class="special"><a href="#menu" class="menuToggle"><span>Menu / Language</span></a></li></ul>
+					<ul>
+						<li class="special"><a href="#menu" class="menuToggle"><span>Menu / Language</span></a></li>
+					</ul>
 				</nav>
 			</header>
 
 			<div id="menu">
-				<ul>
-					<li class="lang-switcher-row" style="text-align: center; border-bottom: 1px solid rgba(255,255,255,0.15);">
-						<a href="index.html" style="color: rgba(255,255,255,0.6) !important;">Simplified</a> | 
-						<a href="index_tc.html" style="color: rgba(255,255,255,0.6) !important;">Traditional</a> | 
-						<a href="index_en.html" style="color: #fff000 !important; font-weight:bold !important;">EN</a>
-					</li>
-					<li><a href="index_en.html">Home</a></li>
-					<li><a href="#one">About Us</a></li>
-					<li><a href="#mission">Our Mission</a></li>
-					<li><a href="#culture">Why Choose Us</a></li>
-					<li><a href="#two">Core Services</a></li>
-					<li><a href="#three">Case Studies</a></li>
-					<li><a href="#cta">Contact Us</a></li>
-				</ul>
-			</div>
+    <ul>
+        <li class="lang-switcher-row" style="border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.8em; margin-bottom: 0.8em; text-align: center; background: none !important;">
+            <span class="icon solid fa-globe" style="margin-right: 6px; color: rgba(255,255,255,0.6); display: inline-block; vertical-align: middle;"></span>
+            
+            <a href="index.html" class="lang-link" style="display:inline !important; font-size:0.9em !important; font-weight: normal !important; color: rgba(255,255,255,0.6) !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">简体</a> 
+            <span style="color: rgba(255,255,255,0.3);">|</span> 
+            
+            <a href="index_tc.html" class="lang-link" style="display:inline !important; font-size:0.9em !important; font-weight: normal !important; color: rgba(255,255,255,0.6) !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">繁体</a> 
+            <span style="color: rgba(255,255,255,0.3);">|</span> 
+            
+            <a href="index_en.html" class="lang-link active" style="display:inline !important; font-size:0.9em !important; font-weight: bold !important; color: #fff000 !important; border:0 !important; padding:0 8px !important; background: none !important; box-shadow: none !important; text-decoration: none !important; opacity: 1 !important; visibility: visible !important;">EN</a>
+        </li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#mission">Mission & Vision</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#services">Core Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</div>
 
 			<section id="banner">
 				<div class="inner">
 					<h2>XingYuan Tech</h2>
-					<p>Remote Team Expansion · One-stop HR Managed Services<br />
-					Specializing in talent configuration and administrative support for remote teams.</p>
-					<ul class="actions special"><li><a href="#cta" class="button primary">Get Started</a></li></ul>
+					<p>Remote Team Expansion · One-Stop HR Hosting Services<br />
+							Focusing on talent staffing and basic administrative hosting for work-from-home teams.</p>
+					<ul class="actions special"><li><a href="#contact" class="button primary">Discuss Cooperation</a></li></ul>
+				</div>
+				<a href="#about" class="more scrolly">Learn More</a>
+			</section>
+
+			<section id="about" class="wrapper style1 special">
+				<div class="inner">
+					<header class="major">
+						<h2>About Us</h2>
+						<p>XingYuan Tech focuses on providing professional remote talent staffing and HR administrative hosting services for various online platforms and digital enterprises.</p>
+						<p>We primarily offer talent recruitment, team staffing, personnel management, and operational coordination services, assisting partner companies in building efficient remote work teams based on their business needs. Unlike traditional physical office models, XingYuan Tech specializes in providing flexible remote work services to meet corporate expansion and operational efficiency requirements.</p>
+						<p>With Malaysian talent resources as our core, our services also cover talent recruitment and staffing in Southeast Asian countries such as Vietnam, Myanmar, and Thailand. By integrating a regional talent network with remote human resources management experience, XingYuan Tech provides partners with stable, flexible, and cost-effective HR solutions.</p>
+					</header>
 				</div>
 			</section>
-            
-            <!-- 其餘文案依此類推翻譯為英文 -->
+
+			<section id="mission" class="wrapper style3 special">
+				<div class="inner" style="max-width: 800px; margin: 0 auto;">
+					<div style="background: rgba(255,255,255,0.03); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 30px; text-align: center;">
+						<span class="icon solid fa-rocket" style="font-size: 2.5rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+						<h3 style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px;">Mission</h3>
+						<p style="max-width: 650px; margin: 0 auto; line-height: 1.8; color: rgba(255,255,255,0.85);">
+							To provide trustworthy remote HR solutions, helping enterprises scale their teams efficiently through precise talent matching, systematic management, and stable operational support.
+						</p>
+					</div>
+
+					<div style="background: rgba(255,255,255,0.03); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+						<span class="icon solid fa-eye" style="font-size: 2.5rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+						<h3 style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 20px;">Vision</h3>
+						<p style="max-width: 650px; margin: 0 auto; line-height: 1.8; color: rgba(255,255,255,0.85);">
+							To redefine the global talent collaboration model, making remote team building more efficient, scalable, and sustainable.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="why-us" class="wrapper style2">
+				<div class="inner">
+					<header class="major special">
+						<h2>Why Choose Us</h2>
+						<p>Efficient, stable, flexible, and hassle-free. We help enterprises build long-term, reliable remote team support systems.</p>
+					</header>
+
+					<div class="features">
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-user-check" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>Precise Talent Matching</h3>
+							<p style="font-size: 0.9rem;">Relying on a diverse Southeast Asian talent network, we screen and quickly match remote talent according to your needs.</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-tasks" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>Stable Management Support</h3>
+							<p style="font-size: 0.9rem;">We assist with attendance tracking and disciplinary maintenance to ensure stable team operations aligned with your management standards.</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-chart-line" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>Easier Operation Model</h3>
+							<p style="font-size: 0.9rem;">Reduce cross-regional recruitment communication costs. Standardized hosting helps you focus on your core business.</p>
+						</section>
+
+						<section style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px;">
+							<span class="icon solid fa-sliders-h" style="font-size: 3rem; color: #21b2a6; margin-bottom: 10px;"></span>
+							<h3>Flexible & Scalable</h3>
+							<p style="font-size: 0.9rem;">Whether it's a single position or overall team growth, we provide elastic talent staffing and support.</p>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<section id="services" class="wrapper style1 special">
+				<div class="inner">
+					<header class="major">
+						<h2>Core Services</h2>
+						<p>Targeting online and cross-border business scenarios, XingYuan Tech focuses on providing remote work team recruitment, staffing, and basic hosting support to help enterprises build stable, high-matching, and cost-effective remote teams.</p>
+					</header>
+					<div class="features">
+						<section>
+							<span class="icon solid fa-code"></span>
+							<h3>Tech & Data Support Teams</h3>
+							<p>Based on your business needs, we provide technical talent for web development, system maintenance, and data analysis. Leveraging our precise screening mechanism, we help build highly compatible tech teams to meet your development goals.</p>
+						</section>
+						<section>
+							<span class="icon solid fa-user-shield"></span>
+							<h3>Backend Moderation & Ops Teams</h3>
+							<p>We supply talent for data entry, content moderation, backend processing, and administrative support, assisting enterprises in establishing stable backend teams for daily business processing and operational collaboration.</p>
+						</section>
+						<section>
+							<span class="icon solid fa-paint-brush"></span>
+							<h3>Creative & Visual Design Teams</h3>
+							<p>We deploy design talent with professional experience and international perspectives, covering graphic design, brand visuals, and multimedia content, providing stable digital content and visual support for your enterprise.</p>
+						</section>
+						<section>
+							<span class="icon solid fa-align-left"></span>
+							<h3>Multilingual Online Support Teams</h3>
+							<p>We provide text-only, non-voice multilingual online support personnel suitable for online consultation, platform communication, and daily text services, optimizing your communication efficiency and service experience.</p>
+						</section>
+					</div>
+
+					<div style="background: rgba(16, 46, 44, 0.35); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.12); margin: 4em auto 1em auto; max-width: 100%; width: 100%; text-align: left; box-sizing: border-box;">
+						<h3 style="font-size: 1.35rem; color: #ffffff !important; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; letter-spacing: 1px;">
+							<span class="icon solid fa-info-circle" style="color: #21b2a6; font-size: 1.3rem;"></span> Basic Hosting & Attendance Support
+						</h3>
+						<p style="margin: 0; font-size: 0.95rem; line-height: 1.8; color: rgba(255, 255, 255, 0.82);">All teams operate under a work-from-home remote model. XingYuan Tech assists with basic attendance records, login time tracking, and daily disciplinary maintenance to ensure stable team operations. Specific business workflows, task arrangements, performance evaluations, and management remain under the direct supervision of the partner enterprise.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="testimonials" class="wrapper style3 special">
+				<div class="inner">
+					<header class="major">
+						<h2>Testimonials</h2>
+						<p>With stable team operation capabilities and mature remote management mechanisms, we assist enterprises in establishing long-term, reliable, and efficient offshore team support systems.</p>
+					</header>
+
+					<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: left;">
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-headset" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">Overseas Platform Multilingual CS Team</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Successfully assisted an overseas online platform in building and hosting a 50-person multilingual customer service team using a three-shift rotation system. We handle scheduling, basic attendance, and daily management support. The team has operated smoothly for over 2 years, earning the partner's recognition for service stability.</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-folder-open" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">Platform Ops & Risk Auditing Team</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Based on the enterprise's needs, we specifically staffed and assisted in managing an operations support and risk auditing team. They handle backend data review, abnormal data processing, and daily ops collaboration. Through standardized workflows and basic discipline maintenance, we help maintain stable operational efficiency.</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-clock" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">Online CS & Shift Support Team</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">Staffed text-only customer service, online support, and shift coordination personnel for cross-border online businesses, meeting multi-period operational demands. Shift systems and login time tracking ensure service coverage stability and team attendance performance.</p>
+						</div>
+
+						<div class="custom-case-card" style="flex: 1 1 calc(50% - 10px); min-width: 280px; background: rgba(255,255,255,0.04); padding: 35px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+							<span class="icon solid fa-credit-card" style="font-size: 2rem; color: #21b2a6; margin-bottom: 15px; display: inline-block;"></span>
+							<h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; color: #fff;">Payment & Order Support Team</h3>
+							<p style="margin: 0; font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.75);">For third-party payment and order inquiry scenarios, we configured order check support, text customer service, and backend collaboration roles. This helps enterprises optimize user communication efficiency, streamline daily business processes, and improve overall service response rates.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="wrapper style4">
+				<div class="inner" style="max-width: 1100px; margin: 0 auto; padding: 4em 2em;">
+					<div class="row gtr-200" style="display: flex; align-items: flex-start; gap: 4em;">
+
+						<div style="flex: 1.2; max-width: 580px; margin: 0 auto; width: 100%;">
+							<form method="post" action="https://formspree.io/f/mykvlqjk" style="margin: 0; padding: 0;">
+								<div class="row gtr-uniform">
+									<div class="col-12" style="margin-bottom: 1.2em;">
+										<input type="text" name="name" id="name" value="" placeholder="Your Name" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
+									</div>
+									<div class="col-12" style="margin-bottom: 1.2em;">
+										<input type="email" name="email" id="email" value="" placeholder="Email Address" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; border: 1px solid rgba(255,255,255,0.15);" />
+									</div>
+									<div class="col-12" style="margin-bottom: 1.5em;">
+										<textarea name="message" id="message" placeholder="Your Requirements" rows="4" required style="color:#fff; background:rgba(0,0,0,0.35); border-radius: 4px; padding: 0.75em 1em; width: 100%; line-height: 1.6; border: 1px solid rgba(255,255,255,0.15);"></textarea>
+									</div>
+									<div class="col-12" style="text-align: left;">
+										<ul class="actions" style="margin: 0; padding: 0; justify-content: flex-start;">
+											<li style="width: 100%; padding-left: 0;"><input type="submit" value="Submit Inquiry" class="primary" style="width: 100%; height: 3.25em; line-height: 3.25em; padding: 0 1em; font-weight: 600; border-radius: 4px; letter-spacing: 1px;" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div style="flex: 0.8; padding-left: 2.5em; border-left: 1px solid rgba(255,255,255,0.12);">
+							<h2 style="font-size: 1.8rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.8em; letter-spacing: 1px;">Build Your Remote Team</h2>
+							<p style="color: rgba(255,255,255,0.75); line-height: 1.8; margin-bottom: 2em; font-size: 0.95rem;">
+								XingYuan Tech focuses on talent staffing and basic hosting support for work-from-home remote teams, helping enterprises quickly build stable, highly matched, and cost-effective cross-regional teams, allowing you to focus more on core business development.
+							</p>
+							<div style="background: rgba(255,255,255,0.03); padding: 22px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+								<p style="margin: 0; font-size: 0.85rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;">Official Contact Email</p>
+								<p style="margin: 0; font-size: 1.15rem; font-weight: 600; color: #21b2a6; letter-spacing: 0.5px;">contact@xingyuan.info</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://t.me/XingYuan_BR" target="_blank" rel="noopener noreferrer" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+					<li><a href="mailto:contact@xingyuan.info" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2026 XingYuan Tech XINGYUAN. All rights reserved.</li>
+				</ul>
+			</footer>
+
 		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
