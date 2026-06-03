@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>页面维护中 - 星远科技</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -18,9 +19,15 @@
             padding: 20px;
             text-align: center;
         }
-        h1 { font-size: 72px; color: #f7a600; margin-bottom: 10px; }
+        .lang-wrapper {
+            display: none; /* 預設先隱藏，交由 JS 判斷顯示 */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 { font-size: 64px; color: #f7a600; margin-bottom: 10px; letter-spacing: 1px; }
         .desc { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
-        .qr-box { background: #fff; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
+        .qr-box { background: #fff; padding: 15px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
         .qr-box img { width: 220px; height: 220px; display: block; }
         .address {
             background: #171b2f;
@@ -32,6 +39,7 @@
             margin-bottom: 20px;
             border: 1px solid rgba(247, 166, 0, 0.3);
             color: #f7a600;
+            line-height: 1.5;
         }
         .btn-home {
             display: inline-block;
@@ -41,26 +49,91 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
+            transition: background 0.2s ease;
         }
+        .btn-home:hover { background: #1a948a; }
         .footer-note { font-size: 12px; opacity: 0.4; margin-top: 30px; }
     </style>
 </head>
 <body>
-    <h1>您的访问被限制</h1>
-    <p class="desc">需打赏方可唤醒权限</p>
 
-    <div class="qr-box">
-        <img src="images/usdt.jpg" alt="USDT QR Code">
+    <div id="lang-cn" class="lang-wrapper">
+        <h1>您的访问被限制</h1>
+        <p class="desc">需打赏方可唤醒权限</p>
+
+        <div class="qr-box">
+            <img src="/images/usdt.jpg" alt="USDT QR Code">
+        </div>
+
+        <div class="address">
+            以此地址激活页面访问权限：<br>
+            <strong>USDT - TRC20</strong><br>
+            TUGU6Q5VJpuBtwse4Yuj7CExRTNYCsKszx
+        </div>
+
+        <a href="/" class="btn-home">不打赏，返回首页</a>
+        <p class="footer-note">请在转账前核对地址完整性</p>
     </div>
 
-    <div class="address">
-        以此地址激活页面访问权限：<br>
-        USDT - TRC20<br>
-        TUGU6Q5VJpuBtwse4Yuj7CExRTNYCsKszx
+    <div id="lang-tc" class="lang-wrapper">
+        <h1>您的訪問被限制</h1>
+        <p class="desc">需打賞方可喚醒權限</p>
+
+        <div class="qr-box">
+            <img src="/images/usdt.jpg" alt="USDT QR Code">
+        </div>
+
+        <div class="address">
+            以此地址激活頁面訪問權限：<br>
+            <strong>USDT - TRC20</strong><br>
+            TUGU6Q5VJpuBtwse4Yuj7CExRTNYCsKszx
+        </div>
+
+        <a href="/tc/" class="btn-home">不打賞，返回首頁</a>
+        <p class="footer-note">請在轉賬前核對地址完整性</p>
     </div>
 
-    <a href="index.html" class="btn-home">不打赏，返回首页</a>
+    <div id="lang-en" class="lang-wrapper">
+        <h1>Access Restricted</h1>
+        <p class="desc">Donation required to unlock access权限</p>
 
-    <p class="footer-note">请在转账前核对地址完整性</p>
+        <div class="qr-box">
+            <img src="/images/usdt.jpg" alt="USDT QR Code">
+        </div>
+
+        <div class="address">
+            Use this address to activate page access:<br>
+            <strong>USDT - TRC20</strong><br>
+            TUGU6Q5VJpuBtwse4Yuj7CExRTNYCsKszx
+        </div>
+
+        <a href="/en/" class="btn-home">Return to Homepage</a>
+        <p class="footer-note">Please verify the address completeness before transferring.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var path = window.location.pathname;
+            
+            // 抓取三個語言區塊的 DOM
+            var cnBlock = document.getElementById("lang-cn");
+            var tcBlock = document.getElementById("lang-tc");
+            var enBlock = document.getElementById("lang-en");
+
+            if (path.includes("/en/")) {
+                // 如果路徑包含 /en/，顯示英文
+                enBlock.style.display = "flex";
+                document.title = "Access Restricted - XingYuan Tech";
+            } else if (path.includes("/tc/")) {
+                // 如果路徑包含 /tc/，顯示繁體
+                tcBlock.style.display = "flex";
+                document.title = "您的訪問被限制 - 星遠科技";
+            } else {
+                // 其餘默認情況（根目錄），顯示簡體
+                cnBlock.style.display = "flex";
+                document.title = "您的访问被限制 - 星远科技";
+            }
+        });
+    </script>
 </body>
 </html>
